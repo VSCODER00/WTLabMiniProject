@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Assault and Battery</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/notes.png" alt="Logo" />
+      <p>Crime Reporting System</p>
+    </header>
+    <nav>
+      <div id="report-button">
+        <a href="report.html" class="nav-button">Report a Crime</a>
+      </div>
+      <div id="login-signup-container">
+        <a href="login.html" class="nav-button">Login</a>
+        <a href="signup.html" class="nav-button">Sign Up</a>
+      </div>
+    </nav>
+    <main class="form-container">
+      <h1>Assault and Battery</h1>
+      <form id="assault-and-battery">
+        <div>
+          <label for="assault-type">Type of Assault:</label>
+          <input type="text" id="assault-type" name="assault-type" />
+        </div>
+        <div>
+          <label for="assault-date-time">Date and Time:</label>
+          <input
+            type="datetime-local"
+            id="assault-date-time"
+            name="assault-date-time"
+          />
+        </div>
+        <div>
+          <label for="assault-location">Location:</label>
+          <input type="text" id="assault-location" name="assault-location" />
+        </div>
+        <div>
+          <label for="assault-description">Description of Incident:</label>
+          <textarea
+            id="assault-description"
+            name="assault-description"
+          ></textarea>
+        </div>
+        <div>
+          <label for="assault-injuries">Injuries Sustained:</label>
+          <textarea id="assault-injuries" name="assault-injuries"></textarea>
+        </div>
+        <div>
+          <label for="assault-suspect">Suspect Description:</label>
+          <textarea id="assault-suspect" name="assault-suspect"></textarea>
+        </div>
+        <div>
+          <label for="assault-witnesses">Witnesses:</label>
+          <textarea id="assault-witnesses" name="assault-witnesses"></textarea>
+        </div>
+        <div>
+          <label for="assault-evidence">Evidence:</label>
+          <input
+            type="file"
+            id="assault-evidence"
+            name="assault-evidence"
+            multiple
+          />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

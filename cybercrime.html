@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cyber Crime</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/notes.png" alt="Logo" />
+      <p>Crime Reporting System</p>
+    </header>
+    <nav>
+      <div id="report-button">
+        <a href="report.html" class="nav-button">Report a Crime</a>
+      </div>
+      <div id="login-signup-container">
+        <a href="login.html" class="nav-button">Login</a>
+        <a href="signup.html" class="nav-button">Sign Up</a>
+      </div>
+    </nav>
+    <main class="form-container">
+      <h1>Cyber Crime</h1>
+      <form id="cybercrime">
+        <div>
+          <label for="cyber-type">Type of Cybercrime:</label>
+          <input type="text" id="cyber-type" name="cyber-type" />
+        </div>
+        <div>
+          <label for="cyber-date-time">Date and Time:</label>
+          <input
+            type="datetime-local"
+            id="cyber-date-time"
+            name="cyber-date-time"
+          />
+        </div>
+        <div>
+          <label for="platform">Platform/Website:</label>
+          <input type="text" id="platform" name="platform" />
+        </div>
+        <div>
+          <label for="cyber-description">Description of Incident:</label>
+          <textarea id="cyber-description" name="cyber-description"></textarea>
+        </div>
+        <div>
+          <label for="cyber-financial-details">Financial Details:</label>
+          <textarea
+            id="cyber-financial-details"
+            name="cyber-financial-details"
+          ></textarea>
+        </div>
+        <div>
+          <label for="cyber-suspect">Suspect Information:</label>
+          <textarea id="cyber-suspect" name="cyber-suspect"></textarea>
+        </div>
+        <div>
+          <label for="cyber-evidence">Evidence:</label>
+          <input
+            type="file"
+            id="cyber-evidence"
+            name="cyber-evidence"
+            multiple
+          />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

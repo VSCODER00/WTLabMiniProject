@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Missing Persons</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/notes.png" alt="Logo" />
+      <p>Crime Reporting System</p>
+    </header>
+    <nav>
+      <div id="report-button">
+        <a href="report.html" class="nav-button">Report a Crime</a>
+      </div>
+      <div id="login-signup-container">
+        <a href="login.html" class="nav-button">Login</a>
+        <a href="signup.html" class="nav-button">Sign Up</a>
+      </div>
+    </nav>
+    <main class="form-container">
+      <h1>Missing Persons</h1>
+      <form id="missing-persons">
+        <div>
+          <label for="missing-name">Name of Missing Person:</label>
+          <input type="text" id="missing-name" name="missing-name" />
+        </div>
+        <div>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" />
+        </div>
+        <div>
+          <label for="missing-date-time">Date and Time Last Seen:</label>
+          <input
+            type="datetime-local"
+            id="missing-date-time"
+            name="missing-date-time"
+          />
+        </div>
+        <div>
+          <label for="missing-location">Location Last Seen:</label>
+          <input type="text" id="missing-location" name="missing-location" />
+        </div>
+        <div>
+          <label for="physical-description">Physical Description:</label>
+          <textarea
+            id="physical-description"
+            name="physical-description"
+          ></textarea>
+        </div>
+        <div>
+          <label for="circumstances">Circumstances:</label>
+          <textarea id="circumstances" name="circumstances"></textarea>
+        </div>
+        <div>
+          <label for="contact-information">Contact Information:</label>
+          <input
+            type="text"
+            id="contact-information"
+            name="contact-information"
+          />
+        </div>
+        <div>
+          <label for="missing-evidence">Evidence:</label>
+          <input
+            type="file"
+            id="missing-evidence"
+            name="missing-evidence"
+            multiple
+          />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

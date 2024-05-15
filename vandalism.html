@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Vandalism</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/notes.png" alt="Logo" />
+      <p>Crime Reporting System</p>
+    </header>
+    <nav>
+      <div id="report-button">
+        <a href="report.html" class="nav-button">Report a Crime</a>
+      </div>
+      <div id="login-signup-container">
+        <a href="login.html" class="nav-button">Login</a>
+        <a href="signup.html" class="nav-button">Sign Up</a>
+      </div>
+    </nav>
+    <main class="form-container">
+      <h1>Vandalism</h1>
+      <form id="vandalism">
+        <div>
+          <label for="vandalism-type">Type of Vandalism:</label>
+          <input type="text" id="vandalism-type" name="vandalism-type" />
+        </div>
+        <div>
+          <label for="vandalism-date-time">Date and Time:</label>
+          <input
+            type="datetime-local"
+            id="vandalism-date-time"
+            name="vandalism-date-time"
+          />
+        </div>
+        <div>
+          <label for="vandalism-location">Location:</label>
+          <input
+            type="text"
+            id="vandalism-location"
+            name="vandalism-location"
+          />
+        </div>
+        <div>
+          <label for="vandalism-description">Description of Incident:</label>
+          <textarea
+            id="vandalism-description"
+            name="vandalism-description"
+          ></textarea>
+        </div>
+        <div>
+          <label for="vandalism-damage">Damage Description:</label>
+          <textarea id="vandalism-damage" name="vandalism-damage"></textarea>
+        </div>
+        <div>
+          <label for="vandalism-suspect">Suspect Description:</label>
+          <textarea id="vandalism-suspect" name="vandalism-suspect"></textarea>
+        </div>
+        <div>
+          <label for="vandalism-witnesses">Witnesses:</label>
+          <textarea
+            id="vandalism-witnesses"
+            name="vandalism-witnesses"
+          ></textarea>
+        </div>
+        <div>
+          <label for="vandalism-evidence">Evidence:</label>
+          <input
+            type="file"
+            id="vandalism-evidence"
+            name="vandalism-evidence"
+            multiple
+          />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

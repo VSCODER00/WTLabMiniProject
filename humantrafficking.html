@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Human Trafficking</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/notes.png" alt="Logo" />
+      <p>Crime Reporting System</p>
+    </header>
+    <nav>
+      <div id="report-button">
+        <a href="report.html" class="nav-button">Report a Crime</a>
+      </div>
+      <div id="login-signup-container">
+        <a href="login.html" class="nav-button">Login</a>
+        <a href="signup.html" class="nav-button">Sign Up</a>
+      </div>
+    </nav>
+    <main class="form-container">
+      <h1>Human Trafficking</h1>
+      <form id="human-trafficking">
+        <div>
+          <label for="trafficking-type">Type of Trafficking:</label>
+          <input type="text" id="trafficking-type" name="trafficking-type" />
+        </div>
+        <div>
+          <label for="trafficking-date-time">Date and Time:</label>
+          <input
+            type="datetime-local"
+            id="trafficking-date-time"
+            name="trafficking-date-time"
+          />
+        </div>
+        <div>
+          <label for="trafficking-location">Location:</label>
+          <input
+            type="text"
+            id="trafficking-location"
+            name="trafficking-location"
+          />
+        </div>
+        <div>
+          <label for="trafficking-description">Description of Incident:</label>
+          <textarea
+            id="trafficking-description"
+            name="trafficking-description"
+          ></textarea>
+        </div>
+        <div>
+          <label for="victim-details">Victim Details:</label>
+          <textarea id="victim-details" name="victim-details"></textarea>
+        </div>
+        <div>
+          <label for="trafficking-suspect">Suspect Description:</label>
+          <textarea
+            id="trafficking-suspect"
+            name="trafficking-suspect"
+          ></textarea>
+        </div>
+        <div>
+          <label for="trafficking-witnesses">Witnesses:</label>
+          <textarea
+            id="trafficking-witnesses"
+            name="trafficking-witnesses"
+          ></textarea>
+        </div>
+        <div>
+          <label for="trafficking-evidence">Evidence:</label>
+          <input
+            type="file"
+            id="trafficking-evidence"
+            name="trafficking-evidence"
+            multiple
+          />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

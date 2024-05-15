@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drug Related Crimes</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/notes.png" alt="Logo" />
+      <p>Crime Reporting System</p>
+    </header>
+    <nav>
+      <div id="report-button">
+        <a href="report.html" class="nav-button">Report a Crime</a>
+      </div>
+      <div id="login-signup-container">
+        <a href="login.html" class="nav-button">Login</a>
+        <a href="signup.html" class="nav-button">Sign Up</a>
+      </div>
+    </nav>
+    <main class="form-container">
+      <h1>Drug Related Crimes</h1>
+      <form id="drug-related-crimes">
+        <div>
+          <label for="drug-type">Type of Drug Crime:</label>
+          <input type="text" id="drug-type" name="drug-type" />
+        </div>
+        <div>
+          <label for="drug-date-time">Date and Time:</label>
+          <input
+            type="datetime-local"
+            id="drug-date-time"
+            name="drug-date-time"
+          />
+        </div>
+        <div>
+          <label for="drug-location">Location:</label>
+          <input type="text" id="drug-location" name="drug-location" />
+        </div>
+        <div>
+          <label for="drug-description">Description of Incident:</label>
+          <textarea id="drug-description" name="drug-description"></textarea>
+        </div>
+        <div>
+          <label for="drug-substance-details">Substance Details:</label>
+          <textarea
+            id="drug-substance-details"
+            name="drug-substance-details"
+          ></textarea>
+        </div>
+        <div>
+          <label for="drug-suspect">Suspect Description:</label>
+          <textarea id="drug-suspect" name="drug-suspect"></textarea>
+        </div>
+        <div>
+          <label for="drug-witnesses">Witnesses:</label>
+          <textarea id="drug-witnesses" name="drug-witnesses"></textarea>
+        </div>
+        <div>
+          <label for="drug-evidence">Evidence:</label>
+          <input type="file" id="drug-evidence" name="drug-evidence" multiple />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

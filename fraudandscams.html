@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fraud and Scams</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/notes.png" alt="Logo" />
+      <p>Crime Reporting System</p>
+    </header>
+    <nav>
+      <div id="report-button">
+        <a href="report.html" class="nav-button">Report a Crime</a>
+      </div>
+      <div id="login-signup-container">
+        <a href="login.html" class="nav-button">Login</a>
+        <a href="signup.html" class="nav-button">Sign Up</a>
+      </div>
+    </nav>
+    <main class="form-container">
+      <h1>Fraud and Scams</h1>
+      <form id="fraud-and-scams">
+        <div>
+          <label for="fraud-type">Type of Fraud/Scam:</label>
+          <input type="text" id="fraud-type" name="fraud-type" />
+        </div>
+        <div>
+          <label for="fraud-date-time">Date and Time:</label>
+          <input
+            type="datetime-local"
+            id="fraud-date-time"
+            name="fraud-date-time"
+          />
+        </div>
+        <div>
+          <label for="fraud-location">Location:</label>
+          <input type="text" id="fraud-location" name="fraud-location" />
+        </div>
+        <div>
+          <label for="fraud-description">Description of Incident:</label>
+          <textarea id="fraud-description" name="fraud-description"></textarea>
+        </div>
+        <div>
+          <label for="financial-details">Financial Details:</label>
+          <textarea id="financial-details" name="financial-details"></textarea>
+        </div>
+        <div>
+          <label for="fraud-suspect">Suspect Information:</label>
+          <textarea id="fraud-suspect" name="fraud-suspect"></textarea>
+        </div>
+        <div>
+          <label for="fraud-evidence">Evidence:</label>
+          <input
+            type="file"
+            id="fraud-evidence"
+            name="fraud-evidence"
+            multiple
+          />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Theft and Burglary</title>
+  </head>
+  <body>
+    <header>
+      <img src="assets/notes.png" alt="Logo" />
+      <p>Crime Reporting System</p>
+    </header>
+    <nav>
+      <div id="report-button">
+        <a href="report.html" class="nav-button">Report a Crime</a>
+      </div>
+      <div id="login-signup-container">
+        <a href="login.html" class="nav-button">Login</a>
+        <a href="signup.html" class="nav-button">Sign Up</a>
+      </div>
+    </nav>
+    <main class="form-container">
+      <h1>Theft and Burglary</h1>
+      <form id="theft-and-burglary">
+        <div>
+          <label for="theft-type">Type of Theft/Burglary:</label>
+          <input type="text" id="theft-type" name="theft-type" />
+        </div>
+        <div>
+          <label for="theft-date-time">Date and Time:</label>
+          <input
+            type="datetime-local"
+            id="theft-date-time"
+            name="theft-date-time"
+          />
+        </div>
+        <div>
+          <label for="theft-location">Location:</label>
+          <input type="text" id="theft-location" name="theft-location" />
+        </div>
+        <div>
+          <label for="theft-description">Description of Incident:</label>
+          <textarea id="theft-description" name="theft-description"></textarea>
+        </div>
+        <div>
+          <label for="stolen-items">Stolen Items:</label>
+          <textarea id="stolen-items" name="stolen-items"></textarea>
+        </div>
+        <div>
+          <label for="theft-suspect">Suspect Description:</label>
+          <textarea id="theft-suspect" name="theft-suspect"></textarea>
+        </div>
+        <div>
+          <label for="theft-witnesses">Witnesses:</label>
+          <textarea id="theft-witnesses" name="theft-witnesses"></textarea>
+        </div>
+        <div>
+          <label for="theft-evidence">Evidence:</label>
+          <input
+            type="file"
+            id="theft-evidence"
+            name="theft-evidence"
+            multiple
+          />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
